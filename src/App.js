@@ -1,18 +1,30 @@
-// import logo from './logo.svg';
-// import './App.css';
-
-//azucar sintactico: JSX => JS + HTML/XML
+import Navbar from "./Components/Navbar";
+import Peliculas from "./Components/Peliculas";
+import Programas from "./Components/Programas";
+import Personas from "./Components/Personas";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 
 function App() {
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
-    </div>
+    <Router>
+      <Navbar/>
+      <Switch/>
+      <Route exact path="/">
+      <Peliculas/>
+      </Route>
+      <Route exact path="/programas">
+        <Programas/>
+      </Route>
+      <Route exact path="/personas">
+      <Personas/>
+      </Route>
+      <Switch/>
+    </Router>
   );
 }
 
