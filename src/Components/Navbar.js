@@ -3,10 +3,10 @@ import palomitas from "./Img/palomitas.png";
 
 const Navbar = () => {
     return (
-      <nav className="navbar navbar-expand-lg navbar-light bg-dark">
+      <nav className="navbar navbar-expand-lg navbar-light">
         <div className="container-fluid">
-          <Link to="/" className="navbar-brand fs-2 text-light ms-5">
-            Movies
+          <Link to="/" className="navbar-brand fs-2 text-danger ms-5">
+            Home
           </Link>
           <img src={palomitas} width="80px" alt=""  />
           <button
@@ -22,10 +22,13 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-              <Link to="./Programas" className="nav-link active ms-5 text-light" aria-current="page">
+            <Link to="./Peliculas" className="nav-link active ms-5 text-danger" aria-current="page">
+                  Movies
+              </Link>
+              <Link to="./Programas" className="nav-link active ms-5 text-danger" aria-current="page">
                   TV Shows
               </Link>
-              <Link to="./Personas" className="nav-link ms-5 text-light">
+              <Link to="./Personas" className="nav-link ms-5 text-danger">
                 People
               </Link>
             </div>
