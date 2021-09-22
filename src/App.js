@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import MoviesDetails from "./Components/MoviesDetails";
 import TvDetails from "./Components/TvDetails";
+import PeopleDetails from "./Components/PeopleDetails";
 
 function App() {
 
@@ -34,6 +35,9 @@ function App() {
       </Route>
       <Route exact path="/personas">
         <Personas/>
+      </Route>
+      <Route exact path="/personas/:id">
+        <PeopleDetails/>
       </Route>
       <Switch/>
     </Router>

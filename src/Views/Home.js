@@ -1,6 +1,6 @@
 import React, { useState,useEffect } from 'react';
 import Carousel from '../Components/Carousel';
-import Trending from './Trending';
+import Upcoming from './Upcoming';
 
 
 const Home = () => {
@@ -15,17 +15,19 @@ const Home = () => {
 
     },[])
 
-    return ( 
-        <>
-            <div className="container-fluid ps-0 pe-0 border-0">
-                <Carousel home={home}/>
-            </div>
-            <div className="container-fluid gradient ps-5">
-                <h3 className="">Trending</h3>
-                <Trending/>
-            </div>
-        </>
-     );
+    return (
+      <>
+        <div className="row">
+          <div className="container-fluid ps-0 pe-0 border-0">
+            <Carousel home={home} />
+          </div>
+          <div className="container-fluid gradient ps-5">
+            <h3 className="mt-5 mb-0">Upcoming</h3>
+            <Upcoming />
+          </div>
+        </div>
+      </>
+    );
 }
  
 export default Home;

@@ -14,7 +14,7 @@ const Personas = () => {
     return ( 
     <div className="container-fluid ps-5 d-flex gradiente2">
         <div className="row">
-        {people.map(item=><CardPeople key={item.id} title={item.name} url={item.profile_path}/>)}
+        {people.map(item=><CardPeople key={item.id} title={item.name} url={item.profile_path} id={item.id}/>)}
         </div>
     </div> 
     );

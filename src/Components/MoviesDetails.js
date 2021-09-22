@@ -19,7 +19,7 @@ const MoviesDetails = () => {
           src={
             "https://image.tmdb.org/t/p/original" + moviesDetails.backdrop_path
           }
-          className="card-img"
+          className="card-img opacity-50"
           alt="..."
         />
         <div class="card-img-overlay h-50 bg-dark bg-opacity-75 m-5">
